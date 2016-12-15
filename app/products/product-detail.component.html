@@ -3,6 +3,10 @@
         {{pageTitle}}
     </div>
 
+    <div *ngIf="product">
+        {{product.productName}}
+    </div>
+
     <div>
         <a class="btn btn-default" (click)="onBack()" style="width:80px">
             <i class="glyphicon glyphicon-chevron-left"></i> Back
